@@ -5,6 +5,15 @@ class User {
 
   DateTime registeringDate;
 
+
+  // ignore: prefer_single_quotes
+  String presentation = """
+  Hello i am je suis 
+  
+  phrase to kok
+  
+  """;
+
   User(this.firstName, this.lastName, this.registeringDate);
 
   int get registerDateValue => registeringDate?.year;

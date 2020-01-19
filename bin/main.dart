@@ -14,6 +14,8 @@ int testOne(int n) {
   return fibonacci(n - 1);
 }
 
+const testConst = "TestNotChangeValue";
+
 main(List<String> arguments) {
   var number = iAmTestTheFunction();
   print('Hello world: ${dartTraining.calculate()}!');
@@ -33,4 +35,6 @@ main(List<String> arguments) {
       "Project Manager", "Cadre");
   print(topaJob.displayJobText());
   print(topaJob.displayCategoryText());
+
+  print(user.presentation);
 }

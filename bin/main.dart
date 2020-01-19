@@ -1,4 +1,5 @@
 import 'package:dartTraining/dartTraining.dart' as dartTraining;
+import 'package:dartTraining/training/User.dart';
 import 'package:dartTraining/training/test.dart';
 
 
@@ -17,6 +18,10 @@ main(List<String> arguments) {
   var number = iAmTestTheFunction();
   print('Hello world: ${dartTraining.calculate()}!');
   var test =  testOne(2);
-  print(test);
-  print(number);
+  var user = User('Lionel','Kouame', DateTime(1984,9,5));
+  var topa = User('milette','topa', DateTime(1988,9,5));
+
+  user.loadRegisterSince();
+  topa.loadRegisterSince();
+
 }

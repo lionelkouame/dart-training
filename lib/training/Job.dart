@@ -1,6 +1,7 @@
+import 'package:dartTraining/training/Company.dart';
 import 'package:dartTraining/training/User.dart';
 
-class Job extends User {
+class Job extends User with Company {
   String name;
 
   String category;

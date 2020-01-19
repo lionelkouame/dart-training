@@ -1,4 +1,5 @@
 import 'package:dartTraining/dartTraining.dart' as dartTraining;
+import 'package:dartTraining/training/test.dart';
 
 
 int fibonacci(int n) {
@@ -7,14 +8,15 @@ int fibonacci(int n) {
 }
 
 int testOne(int n) {
+  print('valeur de n');
   if (n == 0 || n == 1) return n;
-  return (n - 3);
+  return fibonacci(n - 1);
 }
 
 main(List<String> arguments) {
+  var number = iAmTestTheFunction();
   print('Hello world: ${dartTraining.calculate()}!');
-  var result = fibonacci(10);
-  var test =  testOne(10);
-  print(result);
+  var test =  testOne(2);
   print(test);
+  print(number);
 }

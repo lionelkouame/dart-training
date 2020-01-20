@@ -23,18 +23,22 @@ main(List<String> arguments) {
   var user = User('Lionel', 'Kouame', DateTime(1984, 9, 5));
   var topa = User('milette', 'topa', DateTime(1988, 9, 5));
 
-  user.loadRegisterSince();
-  topa.loadRegisterSince();
-
   var userJob = Job(user.firstName, user.lastName, user.registeringDate,
       'Programmer', "Cadre");
-  print(userJob.displayJobText());
-  print(userJob.displayCategoryText());
 
   var topaJob = Job(topa.lastName, topa.firstName, topa.registeringDate,
       "Project Manager", "Cadre");
-  print(topaJob.displayJobText());
-  print(topaJob.displayCategoryText());
 
-  print(user.presentation);
+  List<String> myList = ["Lionel", "Henri", "Paul"];
+  
+  print(myList.length);
+
+  myList.add("Kikou");
+  myList.removeAt(0);
+  myList.remove("Paul");
+
+  print(myList);
+
+
+
 }
